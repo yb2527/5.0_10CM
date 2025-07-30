@@ -1,0 +1,180 @@
+/*폰트 임포트, 색상 설정*/
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: white; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimDunggeunmisoTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+.nanum-text {
+    font-family: 'NanumSquare', sans-serif;
+    color: #19265e;
+}
+
+p, .parkdahyun-font {
+            font-family: 'Ownglyph_ParkDaHyun', serif;
+            color: #19265e;
+            font-size: larger;
+            word-break: keep-all;
+        }
+
+h1, h2, h3, h4, .title_font {
+    font-family: 'HakgyoansimDunggeunmisoTTF-B', serif;
+    color: #19265e;
+        }
+
+/* 페이지 콘텐츠를 담을 래퍼 */
+.content-wrapper {
+    width: 100%;
+    max-width: calc(100vh * 9 / 16 - 40px);
+    height: calc(100vh - 40px);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+
+    position: relative; 
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+/*배경 색 설정*/
+.main_bg {
+    background-color: white;
+}
+
+.sub_bg {
+    background-color: white;
+}
+
+
+
+/* 내비게이션 영역 */
+.navbar {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: auto;
+    z-index: 1020;
+    background-color: transparent;
+}
+
+.top-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 전곡 소트 */
+#label {
+    margin-top: 0; 
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.sort-content-wrapper {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+#mainTable {
+    font-size: larger;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+#leftField, #rightField {
+    width: 120px;
+    height: 150px;
+    border: 1px solid #19265e;
+}
+
+A {
+    text-decoration : none;
+    color: #f2e14d;
+}
+
+a:hover {
+    color:#f2e14d;
+}
+
+.nanum-text,
+.nanum-text table,
+.nanum-text #mainTable,
+.nanum-text #mainTable td,
+.result-table,
+.result-table th,
+.result-table td {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1em;
+    padding: 5px;
+    color: #19265e;
+}
+
+
+.result-table {
+    width: 200px;
+    line-height: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid #19265e;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #19265e;
+}
+
+.result-table th {
+    font-family: 'NanumSquare', sans-serif;
+    color: #f2e14d;
+    background-color: #4156ce;
+    text-align: center;
+    font-weight: normal;
+}
+
+.result-table td:first-child {
+    text-align: center;
+}
