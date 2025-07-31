@@ -190,3 +190,49 @@ a:hover {
 .result-table td:first-child {
     text-align: center;
 }
+
+
+.button-row {
+    gap: 20px; /* 버튼 사이 간격 */
+    flex-wrap: wrap;
+}
+
+.music-btn {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+}
+
+.music-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: #f2e14d;
+}
+
+.music-btn img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.music-btn .btn-hover-img {
+    opacity: 0;
+}
+
+.music-btn:hover .btn-default-img {
+    opacity: 0;
+}
+
+.music-btn:hover .btn-hover-img {
+    opacity: 1;
+}
