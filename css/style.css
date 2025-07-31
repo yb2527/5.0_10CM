@@ -159,6 +159,7 @@ a:hover {
     font-size: 1em;
     padding: 5px;
     color: #19265e;
+    word-break: keep-all;
 }
 
 
